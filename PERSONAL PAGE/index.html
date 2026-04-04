@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <p style="margin: 24px;"></p>
+
+    <header>
+        <h1>Design Law</h1>
+    </header>
+
+    <main>
+    <p style="margin: 24px;"></p>
+
+        <section class="music-player">
+  <button class="play-toggle" onclick="togglePlayer()">▶ Add Vibes</button>
+
+  <div class="youtube-shell" id="youtubeShell">
+    <iframe
+      id="youtubePlayer"
+      width="560"
+      height="315"
+      src=""
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+        <p style="margin: 24px;"></p>
+        <section class="banner">
+            <h2>A Design System is the Law.</h2>
+            <p>A design system is essentially a structured collection of reusable components, styles, and rules that guide how a digital product looks and behaves. Instead of reinventing buttons, colors, or layouts every time you build a page, a design system gives you a consistent foundation to work from. This consistency not only improves the visual cohesion of a project but also makes your code more predictable and easier to maintain. When everything follows the same patterns, you spend less time troubleshooting and more time building.
+</p>
+            <p>
+From a practical standpoint, design systems dramatically speed up development. Once you’ve defined your color palette, typography, spacing, and components, you can reuse them across multiple pages or even multiple projects. This reduces redundancy and helps prevent small inconsistencies that can make a project feel unpolished. It also makes collaboration smoother—whether you’re working with other developers or designers—because everyone is referencing the same source of truth instead of making decisions independently.
+</p>
+            <p>
+Finally, a design system improves scalability and long-term maintainability. As your project grows, having a centralized system means updates can be made efficiently and applied everywhere at once. Want to change a primary color or update button styles? You do it in one place instead of hunting through dozens of files. Over time, this kind of structure saves a massive amount of effort and helps ensure your work remains clean, professional, and adaptable as requirements evolve.
+</p>
+<p style="margin: 24px;"></p>
+
+        </section>
+
+        <h2>Color Swatches</h2>
+
+        <section class="color-swatches">
+            <div class="swatches">
+                <div class="swatch" style="--swatch-color: #e96363; text-transform: uppercase;" onclick="setCursor('cursor-coral'); animateSwatch(this);">
+                    <span class="top-text">Coral</span>
+                    <span class="bottom-text">#e96363</span>
+                </div>
+                <div class="swatch" style="--swatch-color: #f4d27d; text-transform: uppercase;" onclick="setCursor('cursor-dijon'); animateSwatch(this);">
+                    <span class="top-text">Dijon</span>
+                    <span class="bottom-text">#f4d27d</span>
+                </div>
+                <div class="swatch" style="--swatch-color: #66cfbb; text-transform: uppercase;" onclick="setCursor('cursor-seafoam'); animateSwatch(this);">
+                    <span class="top-text">seafoam</span>
+                    <span class="bottom-text">#66cfbb</span>
+                </div>
+                <div class="swatch" style="--swatch-color: #605346; text-transform: uppercase; color: rgb(254, 242, 235);" onclick="setCursor('cursor-coffee'); animateSwatch(this);">
+                    <span class="top-text">coffee</span>
+                    <span class="bottom-text">#605346</span>
+                </div>
+            </div>
+<p style="margin: 10px;"></p>
+            <div class="swatches">
+                <div class="swatch" style="--swatch-color: #812b2b; color: rgb(254, 242, 235); text-transform: uppercase;" onclick="setCursor('cursor-mahogany'); animateSwatch(this);">
+                    <span class="top-text">mahogany</span>
+                    <span class="bottom-text">#812b2b</span>
+                </div>
+                <div class="swatch" style="--swatch-color: #ff9233; text-transform: uppercase;" onclick="setCursor('cursor-tangerine'); animateSwatch(this);">
+                    <span class="top-text">tangerine</span>
+                    <span class="bottom-text">#ff9233</span>
+                </div>
+                <div class="swatch" style="--swatch-color: #00ab80; text-transform: uppercase;" onclick="setCursor('cursor-mint'); animateSwatch(this);">
+                    <span class="top-text">mint</span>
+                    <span class="bottom-text">#00ab80</span>
+                </div>
+                <div class="swatch" style="--swatch-color: #3a3a3a; color: rgb(254, 242, 235); text-transform: uppercase;" onclick="setCursor('cursor-charcoal'); animateSwatch(this);">
+                    <span class="top-text">charcoal</span>
+                    <span class="bottom-text">#3a3a3a</span>
+                </div>
+            </div>
+
+        </section>
+
+        <p style="margin: 24px;"></p>
+        <h2>Font Families</h2>
+
+        <section class="fonts">
+         
+            <div class="font-sample" style="font-family: 'Montserrat', sans-serif;">
+            <h3>Montserrat</h3>
+            <ul class="variables">
+                <li style="font-weight: 400; text-decoration: underline;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 650; font-style: italic;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 900; text-transform: uppercase;">The quick brown fox jumps over the lazy dog.</li>
+            </ul>
+            </div>
+
+            <div class="font-sample" style="font-family: Andada Pro, serif;">
+            <h3>Andada Pro</h3>
+            <ul class="variables">
+                <li style="font-weight: 100; text-decoration: underline;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 650; font-style: italic;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 900; text-transform: uppercase;">The quick brown fox jumps over the lazy dog.</li>
+            </ul>
+            </div>
+
+            <div class="font-sample" style="font-family: 'Noto Sans JP', sans-serif;">
+            <h3>Noto Sans JP</h3>
+            <ul class="variables">
+                <li style="font-weight: 400; text-decoration: underline;">すばやい ちゃいろい きつね が なまけた いぬ を とびこえ ました</li>
+                <li style="font-weight: 650; font-style: italic;">すばやい ちゃいろい きつね が なまけた いぬ を とびこえ ました</li>
+                <li style="font-weight: 900; text-transform: uppercase;">すばやい ちゃいろい きつね が なまけた いぬ を とびこえ ました</li>
+            </ul>
+            </div>
+
+            <div class="font-sample" style="font-family: 'Times New Roman', Times, serif;">
+            <h3>Times New Roman</h3>
+            <ul class="variables">
+                <li style="font-weight: 400; text-decoration: underline;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 650; font-style: italic;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 900; text-transform: uppercase;">The quick brown fox jumps over the lazy dog.</li>
+            </ul>
+            </div>
+
+
+        </section>
+<p style="margin: 24px;"></p>
+
+        <h2>Text Styles</h2>
+
+        <section class="elements">
+
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank" id="SRANK">S</span>
+      <img src="CAPTAIN.png" class="card-image">
+      <h1 class="text-style" id="CARD1" style="color: #fef2eb;">Heading 1</h1>
+      <p class="text-style" style="color: #fef2eb;">
+        Font = Montserrat // 
+        Size = 40pt <br>
+        Weight = 900 // 
+        Letter Spacing = 1em</p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Captain</h2>
+      <img src="CAPTAINBACK.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;"> Heading 1 calls the shots, and everyone else gets out of the damn way. That's why I call it the Captain.</p>
+    </div>
+
+  </div>
+</div>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank">A</span>
+      <img src="AVIATOR.png" class="card-image">
+      <h2 class="text-style" id="CARD2" style="color: #fef2eb;">Heading 2</h2>
+      <p class="text-style" style="color: #fef2eb;">
+    Font = Montserrat //
+    Size = 15pt <br>
+    Weight = 750 //
+    Letter Spacing = .2em </p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Pilot</h2>
+      <img src="AVIATORBACK.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">Takes you where you need to go. You'll see this one often, and it's always reliable. Always happy to help.</p>
+    </div>
+
+  </div>
+</div>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank">B</span>
+      <img src="CRAZY.png" class="card-image">
+      <h3 class="text-style" id="CARD3" style="color: #fef2eb;">Heading 3</h3>
+      <p class="text-style" style="color: #fef2eb;">
+    Font = Variable //
+    Size = 19pt <br>
+    Weight = 750 //
+    Letter Spacing = 0em </p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Scientist</h2>
+      <img src="CRAZYBACK.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">Highly specialized, and generally weird. It doesn't have as many set expectations, so it's easy to customize.</p>
+    </div>
+
+  </div>
+</div>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank" id="SRANK">S</span>
+      <img src="STRONK.png" class="card-image">
+      <p class="text-style" id="CARD4" style="color: #fef2eb;">Paragraph</p>
+      <p class="text-style" style="color: #fef2eb;">
+    Font = Montserrat //
+    Size = 11pt <br>
+    Weight = 400 //
+    Letter Spacing = 0em </p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Strongman</h2>
+      <img src="STRONKBACK.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">The heavy lifter. Everywhere and everything. The guts of any website. Tougher than you, and probably happier. </p>
+    </div>
+
+  </div>
+</div>
+        </section>
+<p style="margin: 24px;"></p>
+<p style="margin: 24px;"></p>
+
+        <h2>Custom Cards</h2>
+
+        <section class="elements">
+
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank" id="SRANK">S</span>
+      <img src="myself.png" class="card-image">
+      <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Author</h2>
+      <p class="text-style" style="color: #fef2eb;">
+        Warlock // Rogue<br>
+        "One of these days I'm gonna put all my friends on trading cards."</p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Author</h2>
+      <img src="myselfback.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;"> Draw 5 cards and immediately apply all 5 to yourself, good or bad.</p>
+    </div>
+
+  </div>
+</div>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank" id="SRANK">S</span>
+      <img src="jules.png" class="card-image">
+      <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Priestess</h2>
+      <p class="text-style" style="color: #fef2eb;">
+    Mage // Healer <br>
+    "Until the wheels fall off..."</p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Priestess</h2>
+      <img src="julesback.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">Heal +10 HP and remove all negative effects. <br> Your next attack card deals +5 damage.</p>
+    </div>
+
+  </div>
+</div>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank">A</span>
+      <img src="navi.png" class="card-image">
+      <h2 class="text-style" id="CARD3" style="color: #fef2eb;">The Trickster</h2>
+      <p class="text-style" style="color: #fef2eb;">
+    Rogue // Thief<br>
+    "Go on. Open the door. Just a little bit.</p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Trickster</h2>
+      <img src="naviback.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">Steal the last card that was played, and add it to your hand.</p>
+    </div>
+
+  </div>
+</div>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+      <span class="card-rank" id="FRANK">F</span>
+      <img src="binks.png" class="card-image">
+      <h2 class="text-style" id="CARD4" style="color: #fef2eb;">The Spirit of Gluttony</h2>
+      <p class="text-style" style="color: #fef2eb;">
+    Tank // Bard<br>
+    "FOOD? FOOD! NOW!"</p>
+    </div>
+
+    <div class="card-back">
+      <h2>The Spirit of Gluttony</h2>
+      <img src="binksback.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">You may consume up to 5 cards to gain +3 HP per card.</p>
+    </div>
+
+  </div>
+</div>
+        </section>
+
+        <p style="margin: 24px;"></p>
+
+    </main>
+<p style="margin: 24px;"></p>
+<p style="margin: 24px;"></p>
+
+    <footer>
+    </footer>
+    <script>
+  function togglePlayer() {
+    const shell = document.getElementById('youtubeShell');
+    const player = document.getElementById('youtubePlayer');
+
+    if (!shell.classList.contains('active')) {
+      player.src = "https://www.youtube.com/embed/8-h9YVPAfF8?autoplay=1&controls=1&rel=0";
+      shell.classList.add('active');
+    } else {
+      player.src = "";
+      shell.classList.remove('active');
+    }
+  }  
+</script>
+<script>
+  document.querySelectorAll('.card').forEach(card => {
+    let timeout;
+
+    card.addEventListener('mouseenter', () => {
+      clearTimeout(timeout);
+      card.classList.add('is-active');
+    });
+
+    card.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => {
+        card.classList.remove('is-active');
+      }, 200); // match your .card-inner transition time
+    });
+  });
+</script>
+
+<script>
+function setCursor(colorClass) {
+    document.body.classList.remove('cursor-coral', 'cursor-dijon', 'cursor-seafoam', 'cursor-coffee', 'cursor-mahogany', 'cursor-tangerine', 'cursor-mint', 'cursor-charcoal');
+    document.body.classList.add(colorClass);
+}
+</script>
+
+<script>
+function animateSwatch(el) {
+  el.classList.remove('pulse');
+  void el.offsetWidth; // restart animation
+  el.classList.add('pulse');
+}
+</script>
+
+</body>
+</html>
