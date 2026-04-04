@@ -525,6 +525,7 @@ li {
     border: 2px solid rgba(254, 242, 235, 0.25);
     margin-top: 8px;
     margin-bottom: -30px;
+    filter: sepia(0.5) saturate(1.5)
 }
 
 .back-image {
