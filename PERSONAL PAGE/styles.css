@@ -514,7 +514,7 @@ li {
     display: block;
     width: 100%;
     max-width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
     border-radius: 14px;
     border: 2px solid rgba(254, 242, 235, 0.25);
@@ -635,7 +635,7 @@ li {
 .card-stats {
     position: absolute;
     top: 12%;
-    right: -5%;
+    right: -6%;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -651,7 +651,7 @@ li {
     padding: 0px 0px;
 
     border-radius: 50px 0px 0px 50px;
-    background: rgba(210, 193, 165, 0.92);
+    background: linear-gradient(90deg, #d2c1a5 30%, rgb(0, 0, 0, 0) 100%);
     color: #282c34;
 
     font-family: "Montserrat", sans-serif;
@@ -659,7 +659,6 @@ li {
     font-weight: 900;
 
     letter-spacing: 0.08em;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
     border: 1px solid rgba(40, 44, 52, 0.15);
 }
 
