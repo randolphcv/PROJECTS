@@ -2,15 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     cursor: url("CURSED.png"), auto;
-    background: linear-gradient(222deg, #f0e5d4, #d2c1a5);
-    background-size: 400% 400%;
-
-    -webkit-animation: Bonkimation 9s ease infinite;
-    -moz-animation: Bonkimation 9s ease infinite;
-    animation: Bonkimation 9s ease infinite;
-}
+    background: linear-gradient(222deg, #f0e5d4, #d2c1a5);}
 
 @-webkit-keyframes Bonkimation {
     0%{background-position:0% 99%}
@@ -385,24 +378,26 @@ li {
 }
 
 .elements {
-    display: flex;
-    gap: 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3%;
     margin-top: 20px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     color: #fef2eb;
     padding-top: 50px;
-    border-radius: 50px;
     justify-content: center;
 }
 
 .card {
-    width: 500px;
     aspect-ratio: 220 / 300;
+    max-width: 550px;
     position: relative;
     perspective: 1000px;
     border-radius: 20px;
     transition: .5s ease;
+    justify-self: center;
+    width: 100%;
 }
 
 .card-front,
@@ -525,14 +520,13 @@ li {
     border: 2px solid rgba(254, 242, 235, 0.25);
     margin-top: 8px;
     margin-bottom: -30px;
-    filter: sepia(0.5) saturate(1.5)
+    filter: sepia(0.5) saturate(1.2) hue-rotate(-10deg);
 }
 
 .back-image {
     width: 100%;
     max-height: 45%;
     object-fit: cover;
-    border-radius: 14px;
     border: 3px solid rgba(254, 242, 235, 0.5);
     display: block;
     margin: auto;
@@ -555,7 +549,7 @@ li {
     color: #282c34 !important;
     margin-top: 35px;
     background-color: #d2c1a5;
-    height: 50px;
+    height: 35px;
     width: 100%;
     border-radius: 10px;
     align-items: center;
@@ -604,7 +598,7 @@ li {
     font-size: 200%;
     font-style: italic;
     font-weight: 900;
-    color: rgb(255, 220, 48);
+    color: rgb(255, 220, 48, 0.9);
     text-shadow: 
     -1px -2px 1px rgb(255, 241, 170, 0.5), 
      1px  2px 1px rgb(82, 72, 23);
@@ -622,6 +616,7 @@ li {
     text-shadow: none;
     -webkit-text-stroke: 2px #fef2eb;
     font-size: 250%;
+    opacity: 0.8;
 }
 
 #FRANK {
@@ -634,12 +629,96 @@ li {
     color: transparent;
     text-shadow: none;
     font-size: 250%;
+    opacity: 0.8;
+}
+
+.card-stats {
+    position: absolute;
+    top: 12%;
+    right: -5%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 2;
+}
+
+.card-stats span {
+    display: flex;              
+    align-items: center;        /* vertical alignment */
+    gap: 3px;                   /* space between icon + number */
+
+    min-width: 64px;
+    padding: 0px 0px;
+
+    border-radius: 50px 0px 0px 50px;
+    background: rgba(210, 193, 165, 0.92);
+    color: #282c34;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 8pt;
+    font-weight: 900;
+
+    letter-spacing: 0.08em;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+    border: 1px solid rgba(40, 44, 52, 0.15);
+}
+
+.icon {
+    width: 25px;          /* slightly smaller = cleaner */
+    height: 25px;
+    object-fit: contain;
+    flex-shrink: 0;       /* prevents squishing */
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -7px;
+}
+
+.imgtype {
+    display: flex;
+    gap: 6px;
+    margin-top: -4px;
+    scale: 80%;
 }
 
 .text-style {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 0px;
     transition: .3s ease;
+}
+
+.type {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0px;
+    transition: .3s ease;
+    transform: translateY(-20px);
+}
+
+.class-left {
+    height: 40px;
+    aspect-ratio: 350 / 300;
+    align-items: flex-start;
+    margin-right: -3px;
+}
+
+.class-right {
+    height: 40px;
+    aspect-ratio: 350 / 300;
+    transform: scaleX(-1);
+    margin-left: -3px;
+}
+
+.quote {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0px;
+    transition: .3s ease;
+    transform: translateY(-33px);
+    
 }
 
 .card-front {

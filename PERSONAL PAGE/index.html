@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design System</title>
+    <title>Friend War</title>
     <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,13 +43,10 @@
         <p style="margin: 24px;"></p>
         <section class="banner">
             <h2>A game I made up to play with my friends</h2>
-            <p>A design system is essentially a structured collection of reusable components, styles, and rules that guide how a digital product looks and behaves. Instead of reinventing buttons, colors, or layouts every time you build a page, a design system gives you a consistent foundation to work from. This consistency not only improves the visual cohesion of a project but also makes your code more predictable and easier to maintain. When everything follows the same patterns, you spend less time troubleshooting and more time building.
-</p>
-            <p>
-From a practical standpoint, design systems dramatically speed up development. Once you’ve defined your color palette, typography, spacing, and components, you can reuse them across multiple pages or even multiple projects. This reduces redundancy and helps prevent small inconsistencies that can make a project feel unpolished. It also makes collaboration smoother—whether you’re working with other developers or designers—because everyone is referencing the same source of truth instead of making decisions independently.
-</p>
-            <p>
-Finally, a design system improves scalability and long-term maintainability. As your project grows, having a centralized system means updates can be made efficiently and applied everywhere at once. Want to change a primary color or update button styles? You do it in one place instead of hunting through dozens of files. Over time, this kind of structure saves a massive amount of effort and helps ensure your work remains clean, professional, and adaptable as requirements evolve.
+<p>This is a game in development. It's a simple card game where you play against your friends. (Well, my friends at least.) <br>
+Each card has an HP (health points), an ATK (attack points) and a GV (gold value). <br>
+Each player draws 10 cards at the beginning of the game, and may field up to 5 cards at a time. In order to field a card, you must spend its GV cost in gold.<br>
+
 </p>
 <p style="margin: 24px;"></p>
 
@@ -158,11 +155,24 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="myself.png" class="card-image">
+      
+    <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Author</h2>
-      <p class="text-style" style="color: #fef2eb;">
-        Warlock // Rogue<br>
-        "One of these days I'm gonna put all my friends on trading cards."</p>
+        <div class="imgtype">
+          <img src="WARLOCK.png" class="class-left">
+          <img src="ROGUE.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+        Warlock // Rogue</p>
+      <p class="quote" style="color: #fef2eb;">
+        "Someday I'll put all my friends on trading cards."</p>
     </div>
 
     <div class="card-back">
@@ -178,10 +188,23 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
-      <img src="jules.png" class="card-image">
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
+      <img src="jules2.png" class="card-image">
+
+    <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Priestess</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Mage // Healer <br>
+        <div class="imgtype">
+          <img src="MAGE.png" class="class-left">
+          <img src="HEALER.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+        Mage // Healer</p>
+      <p class="quote" style="color: #fef2eb;">
     "Until the wheels fall off..."</p>
     </div>
 
@@ -198,10 +221,23 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank">A</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="navi.png" class="card-image">
-      <h2 class="text-style" id="CARD3" style="color: #fef2eb;">The Trickster</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Rogue // Thief<br>
+
+          <div class="card-header">
+      <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Trickster</h2>
+        <div class="imgtype">
+          <img src="ROGUE.png" class="class-left">
+          <img src="THIEF.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Rogue // Thief</p>
+      <p class="quote" style="color: #fef2eb;">
     "Go on. Open the door. Just a little bit.</p>
     </div>
 
@@ -218,43 +254,64 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank" id="FRANK">F</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="binks.png" class="card-image">
-      <h2 class="text-style" id="CARD4" style="color: #fef2eb;">The Spirit of Gluttony</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Tank // Bard<br>
+
+          <div class="card-header">
+      <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Spirit of Gluttony</h2>
+        <div class="imgtype">
+          <img src="TANK.png" class="class-left">
+          <img src="BARD.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Tank // Bard</p>
+      <p class="quote" style="color: #fef2eb;">
     "FOOD? FOOD! NOW!"</p>
     </div>
 
     <div class="card-back">
       <h2>The Spirit of Gluttony</h2>
       <img src="binksback.jpg" class="back-image">
-    <p class="text-style" style="color: #fef2eb;">You may consume up to 5 cards to gain +3 HP per card.</p>
+    <p class="text-style" style="color: #fef2eb;">You may "consume" up to 5 cards to gain +3 HP per card.</p>
     </div>
 
   </div>
 </div>
-        </section>
-
-
-
-        <section class="elements">
 
 <div class="card">
   <div class="card-inner">
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="sarah.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Huntress</h2>
-      <p class="text-style" style="color: #fef2eb;">
-        Druid // Mage<br>
+        <div class="imgtype">
+          <img src="DRUID.png" class="class-left">
+          <img src="MAGE.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+        Druid // Mage</p>
+      <p class="quote" style="color: #fef2eb;">
         "I hate people."</p>
     </div>
 
     <div class="card-back">
       <h2>The Huntress</h2>
       <img src="sarahback.jpg" class="back-image">
-    <p class="text-style" style="color: #fef2eb;"> Heading 1 calls the shots, and everyone else gets out of the damn way. That's why I call it the Captain.</p>
+    <p class="text-style" style="color: #fef2eb;">Heal +5 HP and shed all negative effects. <br> If The Author is in play, this card attacks twice.</p>
     </div>
 
   </div>
@@ -264,17 +321,30 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="ryan.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The General</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Champion // Paladin<br>
+        <div class="imgtype">
+          <img src="CHAMPION.png" class="class-left">
+          <img src="PALADIN.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Champion // Paladin</p>
+      <p class="quote" style="color: #fef2eb;">
     "All pants are shorts if you're short enough."</p>
     </div>
 
     <div class="card-back">
       <h2>The General</h2>
       <img src="ryanback.jpg" class="back-image">
-    <p class="text-style" style="color: #fef2eb;">Takes you where you need to go. You'll see this one often, and it's always reliable. Always happy to help.</p>
+    <p class="text-style" style="color: #fef2eb;">Double the ATK of another card in play.</p>
     </div>
 
   </div>
@@ -284,12 +354,26 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank">A</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="jordan.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Beast</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Berserker // Wizard<br>
+        <div class="imgtype">
+          <img src="CHAMPION.png" class="class-left">
+          <img src="WIZARD.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Champion // Wizard</p>
+      <p class="quote" style="color: #fef2eb;">
     "Fooled 'em again!"</p>
     </div>
+
 
     <div class="card-back">
       <h2>The Beast</h2>
@@ -303,13 +387,27 @@ Finally, a design system improves scalability and long-term maintainability. As 
   <div class="card-inner">
 
     <div class="card-front">
-      <span class="card-rank" id="SRANK">S</span>
+      <span class="card-rank" id="ARANK">A</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="drew.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Woodsman</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Fighter // Druid<br>
+        <div class="imgtype">
+          <img src="FIGHTER.png" class="class-left">
+          <img src="DRUID.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Fighter // Druid</p>
+      <p class="quote" style="color: #fef2eb;">
     "Huh?"</p>
     </div>
+
 
     <div class="card-back">
       <h2>The Woodsman</h2>
@@ -319,25 +417,36 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
   </div>
 </div>
-        </section>
-
-                <section class="elements">
 
 <div class="card">
   <div class="card-inner">
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="dad.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Priest</h2>
-      <p class="text-style" style="color: #fef2eb;">
-        Cleric // Monk<br>
+        <div class="imgtype">
+          <img src="CLERIC.png" class="class-left">
+          <img src="MONK.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+        Cleric // Monk</p>
+      <p class="quote" style="color: #fef2eb;">
         "Life is hard. It's even harder if you're stupid"</p>
     </div>
 
+
     <div class="card-back">
       <h2>The Priest</h2>
-      <img src="sarahback.jpg" class="back-image">
+      <img src="dadback.jpg" class="back-image">
     <p class="text-style" style="color: #fef2eb;"> Heading 1 calls the shots, and everyone else gets out of the damn way. That's why I call it the Captain.</p>
     </div>
 
@@ -348,16 +457,29 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="mom.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Queen</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Cleric // Healer<br>
+        <div class="imgtype">
+          <img src="CLERIC.png" class="class-left">
+          <img src="HEALER.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Cleric // Healer</p>
+      <p class="quote" style="color: #fef2eb;">
     "Where you supposed to be?"</p>
     </div>
 
     <div class="card-back">
       <h2>The Queen</h2>
-      <img src="ryanback.jpg" class="back-image">
+      <img src="momback.jpg" class="back-image">
     <p class="text-style" style="color: #fef2eb;">Takes you where you need to go. You'll see this one often, and it's always reliable. Always happy to help.</p>
     </div>
 
@@ -368,10 +490,23 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank">A</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="oz.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Plug</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Artificer // Fighter<br>
+        <div class="imgtype">
+          <img src="ARTIFICER.png" class="class-left">
+          <img src="FIGHTER.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Artificer // Fighter</p>
+      <p class="quote" style="color: #fef2eb;">
     "I'm achin' for Akers!"</p>
     </div>
 
@@ -388,24 +523,37 @@ Finally, a design system improves scalability and long-term maintainability. As 
 
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
+<div class="card-stats">
+  <span><img src="HP.png" class="icon">12</span>
+  <span><img src="ATK.png" class="icon">5</span>
+  <span><img src="GV.png" class="icon">3</span>
+</div>
       <img src="abby.png" class="card-image">
+
+          <div class="card-header">
       <h2 class="text-style" id="CARD2" style="color: #fef2eb;">The Guide</h2>
-      <p class="text-style" style="color: #fef2eb;">
-    Mage // Cleric<br>
-    "Huh?"</p>
+        <div class="imgtype">
+          <img src="MAGE.png" class="class-left">
+          <img src="CLERIC.png" class="class-right">
+        </div>
+    </div>
+      <p class="type" style="color: #fef2eb;">
+    Mage // Cleric</p>
+      <p class="quote" style="color: #fef2eb;">
+    "Shhh, don't tell you."</p>
     </div>
 
     <div class="card-back">
       <h2>The guide</h2>
-      <img src="drewback.jpg" class="back-image">
-    <p class="text-style" style="color: #fef2eb;">The heavy lifter. Everywhere and everything. The guts of any website. Tougher than you, and probably happier. </p>
+      <img src="abbyback.jpg" class="back-image">
+    <p class="text-style" style="color: #fef2eb;">View the next five cards in the deck and choose two to put in your hand.</p>
     </div>
 
   </div>
 </div>
         </section>
 
-
+<p style="margin: 100px;"></p>
     </main>
 <p style="margin: 24px;"></p>
 <p style="margin: 24px;"></p>
