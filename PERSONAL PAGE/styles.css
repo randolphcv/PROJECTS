@@ -422,6 +422,19 @@ li {
     z-index: 2;
 }
 
+.card-front {
+    margin-top: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
 /* back is flipped */
 .card-back {
     background-color: #282c34;
@@ -547,7 +560,7 @@ li {
 #CARD2 {
     display: flex;
     color: #282c34 !important;
-    margin-top: 35px;
+    margin-top: -5%;
     background-color: #d2c1a5;
     height: 35px;
     width: 100%;
@@ -615,13 +628,33 @@ li {
     color: transparent;
     text-shadow: none;
     -webkit-text-stroke: 2px #fef2eb;
+
+    filter: drop-shadow(0 0 6px rgba(255, 0, 255, 0.6))
+            drop-shadow(0 0 10px rgba(0, 255, 136, 0.6));
+
     font-size: 250%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
+
+#ARANK {
+        filter: drop-shadow(0 0 6px rgba(255, 231, 46, 0.3))
+            drop-shadow(0 0 5px rgba(255, 77, 0, 0.3));
+}
+
+#BRANK {
+    display: inline-block;
+}
+
+#CRANK {
+    display: inline-block;
+}
+
+
+
 
 #FRANK {
     display: inline-block;
-    background: linear-gradient(60deg, #ff0000 0%, #9d2700 100%);
+    background: linear-gradient(60deg, #d2c1a5 0%, #887557 100%);
     background-size: 100% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -629,13 +662,13 @@ li {
     color: transparent;
     text-shadow: none;
     font-size: 250%;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .card-stats {
     position: absolute;
     top: 12%;
-    right: -6%;
+    right: -5%;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -675,7 +708,7 @@ li {
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    margin-top: -7px;
+    margin-top: -15px;
 }
 
 .imgtype {
@@ -685,10 +718,45 @@ li {
     scale: 80%;
 }
 
+.classrank {
+    display: absolute;
+}
+
+.overclassA {
+    height: 40px;
+    transform: scaleX(-1);
+    z-index: -1;
+    margin-bottom: 1.5%;
+    filter: drop-shadow(0 0 6px rgba(255, 231, 46, 0.9))
+            drop-shadow(0 0 5px rgba(255, 77, 0, 0.9));
+}
+
+.overclassS {
+    height: 40px;
+    transform: scaleX(-1);
+    z-index: -1;
+    margin-bottom: 1.5%;
+    filter: drop-shadow(0 0 6px rgba(0, 208, 255, 0.9))
+            drop-shadow(0 0 6px rgba(0, 208, 255, 0.9))
+            drop-shadow(0 0 10px rgba(255, 0, 242, 0.9));
+
+}
+
+.overclassF {
+    height: 40px;
+    transform: scaleX(-1);
+    z-index: -1;
+    margin-bottom: 1.5%;
+    filter: drop-shadow(0 0 6px rgba(255, 231, 46, 0.3))
+            drop-shadow(0 0 5px rgba(203, 167, 118, 0.3));
+
+}
+
 .text-style {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 0px;
     transition: .3s ease;
+    z-index: 1;
 }
 
 .type {
@@ -703,6 +771,7 @@ li {
     aspect-ratio: 350 / 300;
     align-items: flex-start;
     margin-right: -3px;
+    filter: sepia(.5);
 }
 
 .class-right {
@@ -710,6 +779,7 @@ li {
     aspect-ratio: 350 / 300;
     transform: scaleX(-1);
     margin-left: -3px;
+    filter: sepia(.5);
 }
 
 .quote {
@@ -718,18 +788,6 @@ li {
     transition: .3s ease;
     transform: translateY(-33px);
     
-}
-
-.card-front {
-    margin-top: auto;
-    text-align: center;
-    font-style: italic;
-    font-size: 10pt;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 @keyframes shimmer {
