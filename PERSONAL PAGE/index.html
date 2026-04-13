@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend War</title>
+    <title>FriendGame</title>
     <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <p style="margin: 24px;"></p>
 
     <header>
-        <h1>Friend War</h1>
+        <h1>FriendGame</h1>
     </header>
 
     <main>
@@ -52,46 +52,46 @@ Each player draws 10 cards at the beginning of the game, and may field up to 5 c
 
         </section>
 
-        <h2>Color Swatches</h2>
+        <h2>TEAMS</h2>
 
         <p style="margin: 24px;"></p>
 
         <section class="color-swatches">
             <div class="swatches">
-                <div class="swatch" style="--swatch-color: #e96363; text-transform: uppercase;" onclick="setCursor('cursor-coral'); animateSwatch(this);">
-                    <span class="top-text">Coral</span>
-                    <span class="bottom-text">#e96363</span>
+                <div class="swatch" style="--swatch-color: #e96363; --swatch-mask: url('sarasota.png'); text-transform: uppercase;" onclick="setCursor('cursor-coral'); animateSwatch(this);">
+                    <span class="top-text">Sarasota</span>
+                    <span class="bottom-text">manatee isles</span>
                 </div>
-                <div class="swatch" style="--swatch-color: #f4d27d; text-transform: uppercase;" onclick="setCursor('cursor-dijon'); animateSwatch(this);">
-                    <span class="top-text">Dijon</span>
-                    <span class="bottom-text">#f4d27d</span>
+                <div class="swatch" style="--swatch-color: #f4d27d; --swatch-mask: url('lyon.png'); text-transform: uppercase;" onclick="setCursor('cursor-dijon'); animateSwatch(this);">
+                    <span class="top-text">Lyon</span>
+                    <span class="bottom-text">Temple of Myst</span>
                 </div>
-                <div class="swatch" style="--swatch-color: #66cfbb; text-transform: uppercase;" onclick="setCursor('cursor-seafoam'); animateSwatch(this);">
-                    <span class="top-text">seafoam</span>
-                    <span class="bottom-text">#66cfbb</span>
+                <div class="swatch" style="--swatch-color: #66cfbb; --swatch-mask: url('tokyo.png'); text-transform: uppercase;" onclick="setCursor('cursor-seafoam'); animateSwatch(this);">
+                    <span class="top-text">Tokyo</span>
+                    <span class="bottom-text">Republic of Solace</span>
                 </div>
-                <div class="swatch" style="--swatch-color: #605346; text-transform: uppercase; color: rgb(254, 242, 235);" onclick="setCursor('cursor-coffee'); animateSwatch(this);">
-                    <span class="top-text">coffee</span>
-                    <span class="bottom-text">#605346</span>
+                <div class="swatch" style="--swatch-color: #605346; --swatch-mask: url('xela.png'); text-transform: uppercase; color: rgb(254, 242, 235);" onclick="setCursor('cursor-coffee'); animateSwatch(this);">
+                    <span class="top-text">Xela</span>
+                    <span class="bottom-text">Caballeros de las Montañas</span>
                 </div>
             </div>
 <p style="margin: 10px;"></p>
             <div class="swatches">
-                <div class="swatch" style="--swatch-color: #812b2b; color: rgb(254, 242, 235); text-transform: uppercase;" onclick="setCursor('cursor-mahogany'); animateSwatch(this);">
-                    <span class="top-text">mahogany</span>
-                    <span class="bottom-text">#812b2b</span>
+                <div class="swatch" style="--swatch-color: #812b2b; color: rgb(254, 242, 235); --swatch-mask: url('eureka.png'); text-transform: uppercase;" onclick="setCursor('cursor-mahogany'); animateSwatch(this);">
+                    <span class="top-text">eureka</span>
+                    <span class="bottom-text">redwood kingdom</span>
                 </div>
-                <div class="swatch" style="--swatch-color: #ff9233; text-transform: uppercase;" onclick="setCursor('cursor-tangerine'); animateSwatch(this);">
-                    <span class="top-text">tangerine</span>
-                    <span class="bottom-text">#ff9233</span>
+                <div class="swatch" style="--swatch-color: #ff9233; --swatch-mask: url('lubbock.png'); text-transform: uppercase;" onclick="setCursor('cursor-tangerine'); animateSwatch(this);">
+                    <span class="top-text">lubbock</span>
+                    <span class="bottom-text">society of dust</span>
                 </div>
-                <div class="swatch" style="--swatch-color: #00ab80; text-transform: uppercase;" onclick="setCursor('cursor-mint'); animateSwatch(this);">
-                    <span class="top-text">mint</span>
-                    <span class="bottom-text">#00ab80</span>
+                <div class="swatch" style="--swatch-color: #00ab80; --swatch-mask: url('denver.png'); text-transform: uppercase;" onclick="setCursor('cursor-mint'); animateSwatch(this);">
+                    <span class="top-text">Denver</span>
+                    <span class="bottom-text">Herbalist Colonies</span>
                 </div>
-                <div class="swatch" style="--swatch-color: #3a3a3a; color: rgb(254, 242, 235); text-transform: uppercase;" onclick="setCursor('cursor-charcoal'); animateSwatch(this);">
-                    <span class="top-text">charcoal</span>
-                    <span class="bottom-text">#3a3a3a</span>
+                <div class="swatch" style="--swatch-color: #3a3a3a; color: rgb(254, 242, 235); --swatch-mask: url('tulsa.png'); text-transform: uppercase;" onclick="setCursor('cursor-charcoal'); animateSwatch(this);">
+                    <span class="top-text">Tulsa</span>
+                    <span class="bottom-text">Hills of Agony</span>
                 </div>
             </div>
 
@@ -105,39 +105,41 @@ Each player draws 10 cards at the beginning of the game, and may field up to 5 c
         <section class="fonts">
          
             <div class="font-sample" style="font-family: 'Montserrat', sans-serif;">
-            <h3>Montserrat</h3>
+            <h3>HOW TO WIN</h3>
             <ul class="variables">
-                <li style="font-weight: 400; text-decoration: underline;">The quick brown fox jumps over the lazy dog.</li>
-                <li style="font-weight: 650; font-style: italic;">The quick brown fox jumps over the lazy dog.</li>
-                <li style="font-weight: 900; text-transform: uppercase;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 500; font-style: italic;">Eliminate all other players by attacking them until their HP drops to zero.</li>
             </ul>
             </div>
 
-            <div class="font-sample" style="font-family: Andada Pro, serif;">
-            <h3>Andada Pro</h3>
+            <div class="font-sample" style="font-family: 'Montserrat', sans-serif;">
+            <h3>TURNS</h3>
             <ul class="variables">
-                <li style="font-weight: 100; text-decoration: underline;">The quick brown fox jumps over the lazy dog.</li>
-                <li style="font-weight: 650; font-style: italic;">The quick brown fox jumps over the lazy dog.</li>
-                <li style="font-weight: 900; text-transform: uppercase;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 500; font-style: italic;">- Each player turn has THREE stages. -</li>
+                <li style="font-weight: 500; font-style: italic;">- First stage: Collect all GOLD earned and draw cards. (Replenish hand up to ten cards)  -</li>
+                <li style="font-weight: 500; font-style: italic;">- Second Stage: Deploy cards by paying their GV, or sell deployed cards for half of their GV. -</li>
+                <li style="font-weight: 500; font-style: italic;">- Third Stage: Choose which cards to activate for your turn. -</li>
             </ul>
             </div>
 
-            <div class="font-sample" style="font-family: 'Noto Sans JP', sans-serif;">
-            <h3>Noto Sans JP</h3>
+            <div class="font-sample" style="font-family: 'Montserrat', sans-serif;">
+            <h3>ACTIVATING CARDS</h3>
             <ul class="variables">
-                <li style="font-weight: 400; text-decoration: underline;">すばやい ちゃいろい きつね が なまけた いぬ を とびこえ ました</li>
-                <li style="font-weight: 650; font-style: italic;">すばやい ちゃいろい きつね が なまけた いぬ を とびこえ ました</li>
-                <li style="font-weight: 900; text-transform: uppercase;">すばやい ちゃいろい きつね が なまけた いぬ を とびこえ ました</li>
+                <li style="font-weight: 500; font-style: italic;">To activate a card, place it either at the FRONT or BACK of your field. </li>
+                <li style="font-weight: 500; font-style: italic;">Cards at the FRONT will attack based on their ATK and any modifiers applied. </li>
+                <li style="font-weight: 500; font-style: italic;">Cards at the BACK use their ability, starting or resetting any cooldown timers required. </li>
+                <li style="font-weight: 500; font-style: italic;">Any cards that remain in the CENTER of a player's field will be considered inactive for that turn. </li>
             </ul>
             </div>
 
-            <div class="font-sample" style="font-family: 'Times New Roman', Times, serif;">
-            <h3>Times New Roman</h3>
+            <div class="font-sample" style="font-family: 'Montserrat', sans-serif;">
+            <h3>ATTACKING</h3>
             <ul class="variables">
-                <li style="font-weight: 400; text-decoration: underline;">The quick brown fox jumps over the lazy dog.</li>
-                <li style="font-weight: 650; font-style: italic;">The quick brown fox jumps over the lazy dog.</li>
-                <li style="font-weight: 900; text-transform: uppercase;">The quick brown fox jumps over the lazy dog.</li>
+                <li style="font-weight: 500; font-style: italic;">When a player attacks with either a HERO or CREATURE cared, they must choose a target. </li>
+                <li style="font-weight: 500; font-style: italic;">A player can target either an opposing player OR any card on an opposing player's field.</li>
+                <li style="font-weight: 500; font-style: italic;">Inactive cards are still vulnerable to attacks, even if they are not utilized on a given turn.</li>
+                <li style="font-weight: 500; font-style: italic;">When a HERO or CREATURE card's HP reaches zero, remove it from the field and place it in the discard pile.</li>
             </ul>
+            </div>
             </div>
 
 
@@ -694,7 +696,7 @@ Each player draws 10 cards at the beginning of the game, and may field up to 5 c
     <div class="card-back">
       <h2>Conjure Familiar</h2>
       <img src="robinback.jpg" class="back-image">
-    <p class="text-style" style="color: #fef2eb;">Summon any animal card, and pay its GV to field it. (3 turn cooldown)</p>
+    <p class="text-style" style="color: #fef2eb;">Summon any creature card, and pay its GV to field it. (5 turn cooldown)</p>
     </div>
 
   </div>
@@ -705,7 +707,7 @@ Each player draws 10 cards at the beginning of the game, and may field up to 5 c
     <div class="card-front">
       <span class="card-rank" id="SRANK">S</span>
 <div class="card-stats">
-  <span><img src="HP.png" class="icon">3</span>
+  <span><img src="HP.png" class="icon">10</span>
   <span><img src="ATK.png" class="icon">5</span>
   <span><img src="GV.png" class="icon">7</span>
 </div>
@@ -728,9 +730,9 @@ Each player draws 10 cards at the beginning of the game, and may field up to 5 c
     </div>
 
     <div class="card-back">
-      <h2>The guide</h2>
+      <h2>Sentinel Barrier</h2>
       <img src="coopback.jpg" class="back-image">
-    <p class="text-style" style="color: #fef2eb;">View the next five cards in the deck and choose two to put in your hand.</p>
+    <p class="text-style" style="color: #fef2eb;">Reduce incoming damage to player and all cards by 50% for one turn.</p>
     </div>
 
   </div>
